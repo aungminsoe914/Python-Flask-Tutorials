@@ -1,11 +1,16 @@
 from flask import Flask
 from markupsafe import escape
+import logging
 
+# Set up basic logging configuration
+logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 @app.route('/<name>')
 def hello(name):
     return f"Hello, {escape(name)}"
+
+  
 
 
 # ? run
