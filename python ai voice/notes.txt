@@ -1,0 +1,3 @@
+pip install speechrecognition
+pip install neuralitents
+pip install pyttsx3
